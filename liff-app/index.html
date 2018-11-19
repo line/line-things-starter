@@ -1,0 +1,55 @@
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <script src=" https://d.line-scdn.net/liff/1.0/sdk.js"></script>
+    <script src="liff.js"></script>
+    <link rel="stylesheet" type="text/css" href="liff.css" />
+  </head>
+
+  <body>
+    <!-- Title -->
+    <h2>LINE Things Starter</h2>
+    <hr />
+    <p>
+      <img id="loading-animation" class="" src="loading.gif" height="14px" />
+      <span id="status" class="inactive">Device disconnected</span>
+    </p>
+    <hr />
+    <div id="controls" class="hidden">
+      <!-- Device Info Table -->
+      <table class="device-info-table">
+        <tr>
+          <th class="device-info-cell device-info-key">Name</th>
+          <td class="device-info-cell device-info-val" id="device-name"></td>
+        </tr>
+        <tr>
+          <th class="device-info-cell device-info-key">ID</th>
+          <td class="device-info-cell device-info-val" id="device-id"></td>
+        </tr>
+        <tr>
+          <th class="device-info-cell device-info-key">PSDI</th>
+          <td class="device-info-cell device-info-val" id="device-psdi"></td>
+        </tr>
+        <tr>
+          <th class="device-info-cell device-info-key">Button state</th>
+          <td class="device-info-cell device-info-val">
+            <button id="btn-state" class="btn btn-state" disabled>Released</button>
+          </td>
+        </tr>
+        <tr>
+          <th class="device-info-cell device-info-key">Click count</th>
+          <td class="device-info-cell device-info-val" id="click-count">0</td>
+        </tr>
+      </table>
+      <hr />
+      <!-- Toggle LED -->
+      <p>
+        <button id="btn-led-toggle" class="btn btn-led-toggle" onclick="handlerToggleLed()">Switch LED ON</button>
+      </p>
+      <hr />
+    </div>
+  </body>
+
+</html>
