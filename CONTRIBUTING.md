@@ -5,7 +5,7 @@ First of all, thank you so much for taking your time to contribute! LINE Things 
 - File an issue in [the issue tracker](https://github.com/line/line-things-starter/issues) to report bugs and propose new features and
   improvements.
 - Ask a question using [the issue tracker](https://github.com/line/line-things-starter/issues).
-- Contribute your work by sending [a pull request]https://github.com/line/line-things-starter/pulls).
+- Contribute your work by sending [a pull request](https://github.com/line/line-things-starter/pulls).
 
 ### Contributor license agreement
 
