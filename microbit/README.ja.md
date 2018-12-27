@@ -19,7 +19,7 @@ Arduino IDE をインストールた後、必ずボードを **接続しない�
 3. ツール -> SoftDevice のリストから **S130** を選択してください
 4. ツール -> 書込装置 のリストから **CMSIS-DAP** を選択してください
 5. [arduino-nRF5 README](https://github.com/sandeepmistry/arduino-nRF5#selecting-a-softdevice) の手順に従って、**SoftDevice S130** をデバイスへ書き込みます
-    * SoftDevice の HEX ダウンロードに失敗する場合は、[Nordic のサイト](https://www.nordicsemi.com/Software-and-Tools/Software/S130/Download) から手動でダウンロードして `~/Library/Arduino15/packages/sandeepmistry/hardware/nRF5/0.6.0/cores/nRF5/SDK/components/softdevice/s130/hex` へ `s130_nrf51_2.0.1_softdevice.hex` を配置してください
+    - SoftDevice の HEX ダウンロードに失敗する場合は、[Nordic のサイト](https://www.nordicsemi.com/Software-and-Tools/Software/S130/Download) から手動でダウンロードして `~/Library/Arduino15/packages/sandeepmistry/hardware/nRF5/0.6.0/cores/nRF5/SDK/components/softdevice/s130/hex` へ `s130_nrf51_2.0.1_softdevice.hex` を配置してください
 6. ツール -> シリアルポート で (BBC micro:bit) と表示されたシリアルポートを選択してください
 7. テストとして、一度空のスケッチをアップロードしてみましょう。エラーが出ず、問題がなければ次に進んでください
 

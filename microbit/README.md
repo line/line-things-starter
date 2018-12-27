@@ -19,7 +19,7 @@ Please ensure you have Arduino IDE installed and the board **disconnected**.
 3. Go into Tools -> SoftDevice and select **S130** from the list
 4. Go into Tools -> Programmer and select **CMSIS-DAP** from the list
 5. Flash **SoftDevice S130** to your micro:bit according to [arduino-nRF5 README](https://github.com/sandeepmistry/arduino-nRF5#selecting-a-softdevice) procedure
-    * If you failed to download SoftDevice .hex, you can download hex manually from [Nordic Website](https://www.nordicsemi.com/Software-and-Tools/Software/S130/Download) and place `s130_nrf51_2.0.1_softdevice.hex` into `~/Library/Arduino15/packages/sandeepmistry/hardware/nRF5/0.6.0/cores/nRF5/SDK/components/softdevice/s130/hex`
+    - If you failed to download SoftDevice .hex, you can download hex manually from [Nordic Website](https://www.nordicsemi.com/Software-and-Tools/Software/S130/Download) and place `s130_nrf51_2.0.1_softdevice.hex` into `~/Library/Arduino15/packages/sandeepmistry/hardware/nRF5/0.6.0/cores/nRF5/SDK/components/softdevice/s130/hex`
 6. Under Tools -> Port select the appropriate (BBC micro:bit) device
 7. Test uploading to the board by uploading an empty sketch to make sure there are no issues
 
