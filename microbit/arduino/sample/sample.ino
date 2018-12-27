@@ -1,6 +1,3 @@
-#define NRF_51822_DEBUG
-#define BLE_PERIPHERAL_DEBUG
-
 #include <BLEPeripheral.h>
 #include <Adafruit_Microbit.h>
 
@@ -18,7 +15,7 @@
 #define PSDI_CHARACTERISTIC_UUID "26E2B12B-85F0-4F3F-9FDD-91D114270E6E"
 
 BLEPeripheral blePeripheral;
-BLEBondStore bleBondStore = BLEBondStore(4);
+BLEBondStore bleBondStore;
 
 // Setup User Service
 BLEService userService(USER_SERVICE_UUID);
@@ -39,6 +36,7 @@ void setup() {
   pinMode(PIN_BUTTON_A, INPUT_PULLUP);
   pinMode(PIN_BUTTON_B, INPUT_PULLUP);
 
+  // Clear bond store if push button A+B for 3 secs on start up
   if (!digitalRead(PIN_BUTTON_A) && !digitalRead(PIN_BUTTON_B)) {
     delay(3000);
     if (!digitalRead(PIN_BUTTON_A) && !digitalRead(PIN_BUTTON_B)) {
@@ -63,7 +61,6 @@ void setup() {
   // Set callback
   blePeripheral.setEventHandler(BLEConnected, blePeripheralConnectHandler);
   blePeripheral.setEventHandler(BLEDisconnected, blePeripheralDisconnectHandler);
-  blePeripheral.setEventHandler(BLEBonded, blePeripheralBondedHandler);
   writeCharacteristic.setEventHandler(BLEWritten, writeLEDCallback);
 
   // Set PSDI (Product Specific Device ID) value
@@ -117,10 +114,4 @@ void blePeripheralDisconnectHandler(BLECentral& central) {
   Serial.println(central.address());
   
   microbit.show(microbit.NO);
-}
-
-void blePeripheralBondedHandler(BLECentral& central) {
-  // central bonded event handler
-  Serial.print("Remote bonded event, central: ");
-  Serial.println(central.address());
 }
