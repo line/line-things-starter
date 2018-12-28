@@ -6,7 +6,7 @@
 * Micro USB ケーブル
 
 ## インストール方法
-Arduino IDE をインストールた後、必ずボードを **接続しないで** 以下の手順を進めてください。
+Arduino IDE をインストールした後、必ずボードを **接続しないで** 以下の手順を進めてください。
 
 1. Arduino IDE を開きます
 2. **[arduino-nRF5](https://github.com/sandeepmistry/arduino-nRF5)** を README の手順に従ってインストールします
