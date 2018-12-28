@@ -37,7 +37,7 @@ void setup() {
   pinMode(PIN_BUTTON_B, INPUT_PULLUP);
 
   // Clear bond store if push button A+B for 3 secs on start up
-  // You can bond only one central device on each device by library restriction
+  // You can bond only one central device on each peripheral device by library restriction
   if (!digitalRead(PIN_BUTTON_A) && !digitalRead(PIN_BUTTON_B)) {
     delay(3000);
     if (!digitalRead(PIN_BUTTON_A) && !digitalRead(PIN_BUTTON_B)) {
