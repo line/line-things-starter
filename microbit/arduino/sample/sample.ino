@@ -2,9 +2,11 @@
 #include <Adafruit_Microbit.h>
 
 // Device Name: Maximum 20 bytes
-#define DEVICE_NAME "LINE Things microbit"
+#define DEVICE_NAME "micro:bit"
+// Local Name in advertising packet: Maximum 29 bytes
+#define LOCAL_NAME "LINE Things Trial micro:bit"
 
-// User service UUID: Change this to your generated service UUID
+// User Service UUID: Change this to your generated service UUID
 #define USER_SERVICE_UUID "91E4E176-D0B9-464D-9FE4-52EE3E9F1552"
 // User service characteristics
 #define WRITE_CHARACTERISTIC_UUID "E9062E71-9E62-4BC6-B0D3-35CDCD9B027B"
@@ -49,7 +51,7 @@ void setup() {
   attachInterrupt(PIN_BUTTON_A, buttonAction, CHANGE);
 
   blePeripheral.setDeviceName(DEVICE_NAME);
-  blePeripheral.setLocalName(DEVICE_NAME);
+  blePeripheral.setLocalName(LOCAL_NAME);
   blePeripheral.setBondStore(bleBondStore);
   blePeripheral.setAdvertisedServiceUuid(userService.uuid());
 
