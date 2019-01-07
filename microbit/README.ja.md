@@ -11,7 +11,8 @@ Arduino IDE をインストールした後、必ずボードを **接続しな�
 1. Arduino IDE を開きます
 2. **[arduino-nRF5](https://github.com/sandeepmistry/arduino-nRF5)** を README の手順に従ってインストールします
 3. **[BLEPeripheral](https://github.com/sandeepmistry/arduino-BLEPeripheral)** ライブラリをインストールします
-3. **[Adafruit_Microbit](https://github.com/adafruit/Adafruit_Microbit)** ライブラリをインストールします
+4. **[Adafruit GFX](https://github.com/adafruit/Adafruit-GFX-Library)** ライブラリをインストールします
+5. **[Adafruit_Microbit](https://github.com/adafruit/Adafruit_Microbit)** ライブラリをインストールします
 
 ## セットアップ
 1. **BBC micro:bit** を Micro USB ケーブルを使って PC へ接続してください
