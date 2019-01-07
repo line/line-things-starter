@@ -11,8 +11,8 @@ Please ensure you have Arduino IDE installed and the board **disconnected**.
 1. Open Arduino IDE
 2. Install **[arduino-nRF5](https://github.com/sandeepmistry/arduino-nRF5)** board library on your Arduino IDE
 3. Install **[BLEPeripheral](https://github.com/sandeepmistry/arduino-BLEPeripheral)** library on your Arduino IDE
-3. Install **[Adafruit GFX](https://github.com/adafruit/Adafruit-GFX-Library)** library on your Arduino IDE
-4. Install **[Adafruit_Microbit](https://github.com/adafruit/Adafruit_Microbit)** library on your Arduino IDE
+4. Install **[Adafruit GFX](https://github.com/adafruit/Adafruit-GFX-Library)** library on your Arduino IDE
+5. Install **[Adafruit_Microbit](https://github.com/adafruit/Adafruit_Microbit)** library on your Arduino IDE
 
 ## Setup
 1. Connect the **BBC micro:bit** board via Micro-USB cable to your computer
