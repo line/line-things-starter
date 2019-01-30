@@ -66,7 +66,7 @@ void setupServices(void) {
   userService.begin();
 
   writeCharacteristic = BLECharacteristic(writeCharacteristicUUID);
-  writeCharacteristic.setProperties(CHR_PROPS_WRITE_WO_RESP);
+  writeCharacteristic.setProperties(CHR_PROPS_WRITE);
   writeCharacteristic.setWriteCallback(write_led_cb);
   writeCharacteristic.setPermission(SECMODE_ENC_NO_MITM, SECMODE_ENC_NO_MITM);
   writeCharacteristic.setFixedLen(1);
