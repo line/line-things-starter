@@ -19,8 +19,9 @@ Currently LINE Things Starter firmwares supports the following 3 development boa
 - [M5Stack （ESP32)](http://m5stack.com/)
 - [Adafruit Feather nRF52 Bluefruit LE](https://www.adafruit.com/product/3406)
 - [BBC micro:bit](https://microbit.org/)
+- [Obniz](https://obniz.io/)
 
-Each firmware is located under、`esp32`, `m5stack`, `nrf52`, `microbit`  respectively.
+Each firmware is located under、`esp32`, `m5stack`, `nrf52`, `microbit`, `obniz` respectively.
 For further details, please refer to the `README` file in each directory.
 
 ### Enable LINE Things
