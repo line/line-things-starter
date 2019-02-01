@@ -19,8 +19,9 @@ LINE Things Starter のファームウェアは、現在以下の3つの開発�
 - [M5Stack （ESP32)](http://m5stack.com/)
 - [Adafruit Feather nRF52 Bluefruit LE](https://www.adafruit.com/product/3406)
 - [BBC micro:bit](https://microbit.org/)
+- [Obniz](https://obniz.io/)
 
-それそれ、`esp32`, `m5stack`, `nrf52`, `microbit` のディレクトリの下にファームウェアが格納されています。
+それそれ、`esp32`, `m5stack`, `nrf52`, `microbit`, `obniz` のディレクトリの下にファームウェアが格納されています。
 詳しくは、それぞれのディレクトリの `README` を参照してください。
 
 ### Enable LINE Things
