@@ -15,7 +15,7 @@ LINE Things を LINE Things Starter の初期ファームウェアを利用し�
 LINE Things Starter を試すには、Bluetooth LE 対応の開発ボードへファームウェアを書き込む必要があります。
 LINE Things Starter のファームウェアは、現在以下の6つの開発ボードに対応しています。
 
-- LINE Things dev board
+- [LINE Things dev board](https://github.com/line/line-things-dev-board)
 - [Espressif ESP32-DevKitC](https://www.espressif.com/en/products/hardware/esp32-devkitc/overview)
 - [M5Stack （ESP32)](http://m5stack.com/)
 - [Adafruit Feather nRF52 Bluefruit LE](https://www.adafruit.com/product/3406)
