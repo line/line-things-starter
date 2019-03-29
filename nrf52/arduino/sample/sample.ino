@@ -32,6 +32,7 @@ volatile int btnAction = 0;
 
 void setup() {
   pinMode(LED1, OUTPUT);
+  digitalWrite(LED1, 0);
   pinMode(BUTTON, INPUT_PULLUP);
   attachInterrupt(BUTTON, buttonAction, CHANGE);
 
