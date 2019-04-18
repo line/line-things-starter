@@ -68,7 +68,7 @@ void setupServices(void) {
 
   writeCharacteristic = BLECharacteristic(writeCharacteristicUUID);
   writeCharacteristic.setProperties(CHR_PROPS_WRITE);
-  writeCharacteristic.setWriteCallback(write_led_cb);
+  writeCharacteristic.setWriteCallback(writeLEDCallback);
   writeCharacteristic.setPermission(SECMODE_ENC_NO_MITM, SECMODE_ENC_NO_MITM);
   writeCharacteristic.setFixedLen(1);
   writeCharacteristic.begin();
@@ -108,7 +108,7 @@ void buttonAction() {
   btnAction++;
 }
 
-void write_led_cb(BLECharacteristic& chr, uint8_t* data, uint16_t len, uint16_t offset) {
+void writeLEDCallback(uint16_t conn_hdl, BLECharacteristic* chr, uint8_t* data, uint16_t len) {
   int value = *data;
   digitalWrite(LED1, value);
 }
