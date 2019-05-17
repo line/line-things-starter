@@ -13,8 +13,8 @@
 #define PSDI_SERVICE_UUID "E625601E-9E55-4597-A598-76018A0D293D"
 #define PSDI_CHARACTERISTIC_UUID "26E2B12B-85F0-4F3F-9FDD-91D114270E6E"
 
-#define BUTTON 11
-#define LED1 17
+#define BUTTON 7
+#define LED1 LED_RED
 
 uint8_t userServiceUUID[16];
 uint8_t psdiServiceUUID[16];
@@ -32,6 +32,7 @@ volatile int btnAction = 0;
 
 void setup() {
   pinMode(LED1, OUTPUT);
+  digitalWrite(LED1, 0);
   pinMode(BUTTON, INPUT_PULLUP);
   attachInterrupt(BUTTON, buttonAction, CHANGE);
 
@@ -66,8 +67,8 @@ void setupServices(void) {
   userService.begin();
 
   writeCharacteristic = BLECharacteristic(writeCharacteristicUUID);
-  writeCharacteristic.setProperties(CHR_PROPS_WRITE_WO_RESP);
-  writeCharacteristic.setWriteCallback(write_led_cb);
+  writeCharacteristic.setProperties(CHR_PROPS_WRITE);
+  writeCharacteristic.setWriteCallback(writeLEDCallback);
   writeCharacteristic.setPermission(SECMODE_ENC_NO_MITM, SECMODE_ENC_NO_MITM);
   writeCharacteristic.setFixedLen(1);
   writeCharacteristic.begin();
@@ -107,7 +108,7 @@ void buttonAction() {
   btnAction++;
 }
 
-void write_led_cb(BLECharacteristic& chr, uint8_t* data, uint16_t len, uint16_t offset) {
+void writeLEDCallback(uint16_t conn_hdl, BLECharacteristic* chr, uint8_t* data, uint16_t len) {
   int value = *data;
   digitalWrite(LED1, value);
 }

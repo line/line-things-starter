@@ -13,14 +13,17 @@ LINE Things を LINE Things Starter の初期ファームウェアを利用し�
 ### Install Firmware
 
 LINE Things Starter を試すには、Bluetooth LE 対応の開発ボードへファームウェアを書き込む必要があります。
-LINE Things Starter のファームウェアは、現在以下の3つの開発ボードに対応しています。
+LINE Things Starter のファームウェアは、現在以下の6つの開発ボードに対応しています。
 
+- [LINE Things dev board](https://github.com/line/line-things-dev-board)
 - [Espressif ESP32-DevKitC](https://www.espressif.com/en/products/hardware/esp32-devkitc/overview)
 - [M5Stack （ESP32)](http://m5stack.com/)
-- [Adafruit Feather nRF52 Bluefruit LE](https://www.adafruit.com/product/3406)
+- [Adafruit Feather nRF52 Bluefruit LE - nRF52832](https://www.adafruit.com/product/3406)
+- [Adafruit Feather nRF52840 Express](https://www.adafruit.com/product/4062)
 - [BBC micro:bit](https://microbit.org/)
+- [Obniz](https://obniz.io/)
 
-それそれ、`esp32`, `m5stack`, `nrf52`, `microbit` のディレクトリの下にファームウェアが格納されています。
+それそれ、`line-things-dev-board`, `esp32`, `m5stack`, `nrf52`, `microbit`, `obniz` のディレクトリの下にファームウェアが格納されています。
 詳しくは、それぞれのディレクトリの `README` を参照してください。
 
 ### Enable LINE Things
@@ -34,8 +37,7 @@ LINE Things Starter のファームウェアは、現在以下の3つの開発�
 
 ## Developer Trial
 
-LINE Things では、オリジナルファームウェアと LIFF アプリの開発ができる機能を [LINE Things Developer Trial](https://developers.line.biz/ja/docs/line-things/about-line-things-trial/)
- として公開しています。
+LINE Things では、オリジナルファームウェアと LIFF アプリの開発ができる機能を [LINE Things Developer Trial](https://developers.line.biz/ja/docs/line-things/about-line-things-trial/) として公開しています。
 
 Developer Trial を利用して開発を行うには、LIFF アプリの作成と、トライアルプロダクトの登録および GATT Service UUID の発行が必要です。
 詳しくは、LINE Developers サイトをご覧ください。
