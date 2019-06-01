@@ -55,6 +55,7 @@ void setup() {
   Serial.begin(115200);
 
   pinMode(LED1, OUTPUT);
+  digitalWrite(LED1, 0);
   pinMode(BUTTON, INPUT_PULLUP);
   attachInterrupt(BUTTON, buttonAction, CHANGE);
 

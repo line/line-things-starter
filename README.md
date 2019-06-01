@@ -6,22 +6,25 @@ LINE Things compatible device example firmware and LIFF application code are inc
 
 ## Getting Started
 
-[LINE Things](https://developers.line.biz/ja/docs/line-things/) is a platform that connects Bots and Web services together with IoT devices that are Bluetooth LE enabled. 
+[LINE Things](https://developers.line.biz/ja/docs/line-things/) is a platform that connects Bots and Web services together with IoT devices that are Bluetooth LE enabled.
 
 To start developing for LINE Things using the example code and the sample firmware, the following steps are necessary.
 
 ### Installing the Firmware
 
 To start development using the example firmwares, you will need a compatible Bluetooth LE enabled development board.
-Currently LINE Things Starter firmwares supports the following 5 development boards
+Currently LINE Things Starter firmwares supports the following 7 development boards
 
+- [LINE Things dev board](https://github.com/line/line-things-dev-board)
 - [Espressif ESP32-DevKitC](https://www.espressif.com/en/products/hardware/esp32-devkitc/overview)
 - [M5Stack （ESP32)](http://m5stack.com/)
-- [Adafruit Feather nRF52 Bluefruit LE](https://www.adafruit.com/product/3406)
+- [Adafruit Feather nRF52 Bluefruit LE - nRF52832](https://www.adafruit.com/product/3406)
+- [Adafruit Feather nRF52840 Express](https://www.adafruit.com/product/4062)
 - [BBC micro:bit](https://microbit.org/)
 - [Linkit 7697](https://labs.mediatek.com/zh-tw/chipset/MT7697)
+- [Obniz](https://obniz.io/)
 
-Each firmware is located under、`esp32`, `m5stack`, `nrf52`, `microbit` , `mt7697`  respectively.
+Each firmware is located under、`line-things-dev-board`, `esp32`, `m5stack`, `nrf52`, `microbit`, `obniz`, `mt7697` respectively.
 For further details, please refer to the `README` file in each directory.
 
 ### Enable LINE Things
@@ -30,7 +33,7 @@ Please scan the following QR code with LINE to activate LINE Things.
 
 ![](https://developers.line.biz/media/line-things/qr_code-311f3503.png)
 
-Upon turning the device on, a device with the name `LINE Things Starter (Default Firmware)`  will be detected.
+Upon turning the device on, a device with the name `LINE Things Starter (Default Firmware)` will be detected.
 Once the device is connected, the LIFF app can then be launched by selecting the device.
 Here you can test all the LIFF BLE functionalities of LINE Things.
 
@@ -43,7 +46,7 @@ For additional details, please visit the [LINE Developers](https://developers.li
 
 Please refer to the following article from LINE Engineering Blog.
 
-- [LINE の IoT プラットフォーム LINE Things の Developer Trial を試してみる](https://engineering.linecorp.com/ja/blog/line-things-developer-trial/)
+- [Trying out LINE’s IoT Platform through LINE Things Developer Trial](https://engineering.linecorp.com/en/blog/line-things-developer-trial/)
 
 ## License
 
