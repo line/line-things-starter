@@ -21,7 +21,7 @@ Currently LINE Things Starter firmwares supports the following 7 development boa
 - [Adafruit Feather nRF52 Bluefruit LE - nRF52832](https://www.adafruit.com/product/3406)
 - [Adafruit Feather nRF52840 Express](https://www.adafruit.com/product/4062)
 - [BBC micro:bit](https://microbit.org/)
-- [Linkit 7697](https://labs.mediatek.com/zh-tw/chipset/MT7697)
+- [Linkit 7697](https://labs.mediatek.com/en/chipset/MT7697)
 - [Obniz](https://obniz.io/)
 
 Each firmware is located under、`line-things-dev-board`, `esp32`, `m5stack`, `nrf52`, `microbit`, `obniz`, `mt7697` respectively.
