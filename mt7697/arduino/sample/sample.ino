@@ -4,7 +4,7 @@
 #define BUTTON_PIN      (6)
 
 int nButtonChanged = 0;
-int bOn=0;
+int bOn = 0;
 LBLEUuid serviceUuid("91E4E176-D0B9-464D-9FE4-52EE3E9F1552");
 LBLEService userService("91E4E176-D0B9-464D-9FE4-52EE3E9F1552");
 LBLECharacteristicInt writeCharacteristic("E9062E71-9E62-4BC6-B0D3-35CDCD9B027B", LBLE_WRITE);
@@ -24,7 +24,7 @@ void setup() {
   while (!LBLE.ready()) {
     delay(100);
   }
-  LBLEPeripheral.setName("LANMA");
+  LBLEPeripheral.setName("LINE Things Trial MT7697");
   userService.addAttribute(writeCharacteristic);
   userService.addAttribute(notifyCharacteristic);
   LBLEPeripheral.addService(userService);
@@ -34,7 +34,7 @@ void setup() {
   
   LBLEPeripheral.begin();
   LBLEAdvertisementData advertisement;
-  advertisement.configAsConnectableDevice("LANMA",serviceUuid);
+  advertisement.configAsConnectableDevice("LINE Things Trial MT7697",serviceUuid);
   LBLEPeripheral.advertise(advertisement);
   attachInterrupt(BUTTON_PIN, button_press, CHANGE);
   Serial.println("Ready to Connect");
@@ -43,7 +43,7 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   delay(20);
-  if(writeCharacteristic.isWritten()){
+  if (writeCharacteristic.isWritten()) {
     bOn=writeCharacteristic.getValue();
     if(bOn>0){
       digitalWrite(LED_BUILTIN, HIGH);

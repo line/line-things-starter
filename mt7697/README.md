@@ -2,7 +2,7 @@
 
 ## Requirements
 * [Arduino IDE](https://www.arduino.cc/en/Main/Software)
-* [Linkit 7697](https://labs.mediatek.com/zh-tw/chipset/MT7697)
+* [Linkit 7697](https://labs.mediatek.com/en/chipset/MT7697)
 * Micro-USB to USB Cable
 
 ## Installation
