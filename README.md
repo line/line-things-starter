@@ -22,8 +22,9 @@ Currently LINE Things Starter firmwares supports the following 6 development boa
 - [Adafruit Feather nRF52840 Express](https://www.adafruit.com/product/4062)
 - [BBC micro:bit](https://microbit.org/)
 - [Obniz](https://obniz.io/)
+- [Puck.js](https://www.puck-js.com/)
 
-Each firmware is located under、`line-things-dev-board`, `esp32`, `m5stack`, `nrf52`, `microbit`, `obniz` respectively.
+Each firmware is located under `line-things-dev-board`, `esp32`, `m5stack`, `nrf52`, `microbit`, `obniz` and `puckjs` respectively.
 For further details, please refer to the `README` file in each directory.
 
 ### Enable LINE Things
