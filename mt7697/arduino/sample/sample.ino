@@ -24,7 +24,7 @@ void setup() {
   while (!LBLE.ready()) {
     delay(100);
   }
-  LBLEPeripheral.setName("LINE Things Trial MT7697");
+  LBLEPeripheral.setName("MT7697");
   userService.addAttribute(writeCharacteristic);
   userService.addAttribute(notifyCharacteristic);
   LBLEPeripheral.addService(userService);
@@ -34,7 +34,7 @@ void setup() {
   
   LBLEPeripheral.begin();
   LBLEAdvertisementData advertisement;
-  advertisement.configAsConnectableDevice("LINE Things Trial MT7697",serviceUuid);
+  advertisement.configAsConnectableDevice("MT7697",serviceUuid);
   LBLEPeripheral.advertise(advertisement);
   attachInterrupt(BUTTON_PIN, button_press, CHANGE);
   Serial.println("Ready to Connect");
@@ -44,24 +44,24 @@ void loop() {
   // put your main code here, to run repeatedly:
   delay(20);
   if (writeCharacteristic.isWritten()) {
-    bOn=writeCharacteristic.getValue();
-    if(bOn>0){
+    bOn = writeCharacteristic.getValue();
+    if (bOn > 0) {
       digitalWrite(LED_BUILTIN, HIGH);
       Serial.println("LED ON");
-    }else{      
+    } else {      
       digitalWrite(LED_BUILTIN, LOW);
       Serial.println("LED OFF");
     }
   }
-  if(nButtonChanged==1){
-    nButtonChanged=0;
+  if (nButtonChanged == 1) {
+    nButtonChanged = 0;
     int btnValue = digitalRead(BUTTON_PIN);
     notifyCharacteristic.setValue(btnValue);
     LBLEPeripheral.notifyAll(notifyCharacteristic);
     delay(50);
   }
 }
-void button_press(void){
+void button_press(void) {
   Serial.println("====Button Changed");
-  nButtonChanged=1;
+  nButtonChanged = 1;
 }
