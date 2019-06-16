@@ -24,7 +24,7 @@ Currently LINE Things Starter firmwares supports the following 7 development boa
 - [Linkit 7697](https://labs.mediatek.com/en/chipset/MT7697)
 - [Obniz](https://obniz.io/)
 
-Each firmware is located under、`line-things-dev-board`, `esp32`, `m5stack`, `nrf52`, `microbit`, `obniz`, `mt7697` respectively.
+Each firmware is located under、`line-things-dev-board`, `esp32`, `m5stack`, `nrf52`, `microbit`, `mt7697`, `obniz` respectively.
 For further details, please refer to the `README` file in each directory.
 
 ### Enable LINE Things
