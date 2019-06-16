@@ -13,7 +13,7 @@ To start developing for LINE Things using the example code and the sample firmwa
 ### Installing the Firmware
 
 To start development using the example firmwares, you will need a compatible Bluetooth LE enabled development board.
-Currently LINE Things Starter firmwares supports the following 6 development boards
+Currently LINE Things Starter firmwares supports the following 7 development boards
 
 - [LINE Things dev board](https://github.com/line/line-things-dev-board)
 - [Espressif ESP32-DevKitC](https://www.espressif.com/en/products/hardware/esp32-devkitc/overview)
@@ -21,9 +21,10 @@ Currently LINE Things Starter firmwares supports the following 6 development boa
 - [Adafruit Feather nRF52 Bluefruit LE - nRF52832](https://www.adafruit.com/product/3406)
 - [Adafruit Feather nRF52840 Express](https://www.adafruit.com/product/4062)
 - [BBC micro:bit](https://microbit.org/)
+- [Linkit 7697](https://labs.mediatek.com/en/chipset/MT7697)
 - [Obniz](https://obniz.io/)
 
-Each firmware is located under、`line-things-dev-board`, `esp32`, `m5stack`, `nrf52`, `microbit`, `obniz` respectively.
+Each firmware is located under、`line-things-dev-board`, `esp32`, `m5stack`, `nrf52`, `microbit`, `mt7697`, `obniz` respectively.
 For further details, please refer to the `README` file in each directory.
 
 ### Enable LINE Things
