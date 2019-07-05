@@ -43,16 +43,10 @@ class writeCallback: public BLECharacteristicCallbacks {
     std::string value = bleWriteCharacteristic->getValue();
     if ((char)value[0] <= 1) {
       if ((char)value[0] == 1) {
-        M5.Lcd.fillRect(0, 120, 80, 40, BLACK);
-        M5.Lcd.setTextColor(WHITE);
-        M5.Lcd.setCursor(0, 120, 2);
-        M5.Lcd.println("ON");
+        digitalWrite(M5_LED, LOW);
       }
       else {
-        M5.Lcd.fillRect(0, 120, 80, 40, BLACK);
-        M5.Lcd.setTextColor(WHITE);
-        M5.Lcd.setCursor(0, 120, 2);
-        M5.Lcd.println("OFF");
+        digitalWrite(M5_LED, HIGH);
       }
     }
   }
@@ -74,7 +68,10 @@ void setup() {
 
   pinMode(M5_BUTTON_HOME, INPUT);
 
-  // M5Stack LCD Setup
+  pinMode(M5_LED, OUTPUT);
+  digitalWrite(M5_LED, HIGH);
+
+  // M5StickC LCD Setup
   M5.begin(true, true, false);
   uint8_t brightness = 8;
   M5.Axp.ScreenBreath(brightness);
@@ -83,10 +80,6 @@ void setup() {
   M5.Lcd.setCursor(0, 80, 2);
   M5.Lcd.println("Not Connect");
   Serial.println("Not Connect");
-
-  M5.Lcd.setTextColor(WHITE);
-  M5.Lcd.setCursor(0, 120, 2);
-  M5.Lcd.println("OFF");
 }
 
 uint8_t btnValue = 0;
