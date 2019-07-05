@@ -66,8 +66,6 @@ void setup() {
   setupServices();
   startAdvertising();
 
-  pinMode(M5_BUTTON_HOME, INPUT);
-
   pinMode(M5_LED, OUTPUT);
   digitalWrite(M5_LED, HIGH);
 
@@ -82,18 +80,17 @@ void setup() {
   Serial.println("Not Connect");
 }
 
-uint8_t btnValue = 0;
-
 void loop() {
+  M5.update();
 
-  if (digitalRead(M5_BUTTON_HOME) == LOW && btnValue == 0) {
+  if (M5.BtnA.wasPressed()) {
     Serial.println("Pressed");
-    btnValue = 1;
+    uint8_t btnValue = 1;
     notifyCharacteristic->setValue(&btnValue, 1);
     notifyCharacteristic->notify();
-  } else if (digitalRead(M5_BUTTON_HOME) == HIGH && btnValue == 1) {
+  } else if (M5.BtnA.wasReleased()) {
     Serial.println("Released");
-    btnValue = 0;
+    uint8_t btnValue = 0;
     notifyCharacteristic->setValue(&btnValue, 1);
     notifyCharacteristic->notify();
   }
