@@ -5,7 +5,7 @@
 #include <BLE2902.h>
 
 // Device Name: Maximum 30 bytes
-#define DEVICE_NAME "LINE Things Trial M5Stick-C"
+#define DEVICE_NAME "LINE Things Trial M5StickC"
 
 // User service UUID: Change this to your generated service UUID
 #define USER_SERVICE_UUID "91E4E176-D0B9-464D-9FE4-52EE3E9F1552"
