@@ -48,6 +48,7 @@ For additional details, please visit the [LINE Developers](https://developers.li
 Please refer to the following article from LINE Engineering Blog.
 
 - [Trying out LINE’s IoT Platform through LINE Things Developer Trial](https://engineering.linecorp.com/en/blog/line-things-developer-trial/)
+- [LINE Things automatic communication](https://engineering.linecorp.com/en/blog/line-things-automatic-communication/)
 
 ## License
 

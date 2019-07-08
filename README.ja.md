@@ -23,8 +23,9 @@ LINE Things Starter のファームウェアは、現在以下の6つの開発�
 - [Adafruit Feather nRF52840 Express](https://www.adafruit.com/product/4062)
 - [BBC micro:bit](https://microbit.org/)
 - [Obniz](https://obniz.io/)
+- [Puck.js](https://www.puck-js.com/)
 
-それそれ、`line-things-dev-board`, `esp32`, `m5stack`, `m5stick-c`, `nrf52`, `microbit`, `obniz` のディレクトリの下にファームウェアが格納されています。
+それそれ、`line-things-dev-board`, `esp32`, `m5stack`, `m5stick-c`, `nrf52`, `microbit`, `obniz`, `puckjs` のディレクトリの下にファームウェアが格納されています。
 詳しくは、それぞれのディレクトリの `README` を参照してください。
 
 ### Enable LINE Things
@@ -46,6 +47,7 @@ Developer Trial を利用して開発を行うには、LIFF アプリの作成�
 LINE Engineering Blog の以下の記事も参考にしてください。
 
 - [LINE の IoT プラットフォーム LINE Things の Developer Trial を試してみる](https://engineering.linecorp.com/ja/blog/line-things-developer-trial/)
+- [LINE Things 自動通信機能がリリースされました & 使い方紹介](https://engineering.linecorp.com/ja/blog/line-things-automatic-communication/)
 
 ## License
 
