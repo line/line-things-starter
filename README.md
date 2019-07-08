@@ -18,13 +18,14 @@ Currently LINE Things Starter firmwares supports the following 6 development boa
 - [LINE Things dev board](https://github.com/line/line-things-dev-board)
 - [Espressif ESP32-DevKitC](https://www.espressif.com/en/products/hardware/esp32-devkitc/overview)
 - [M5Stack （ESP32)](http://m5stack.com/)
+- [M5StickC](https://m5stack.com/products/stick-c)
 - [Adafruit Feather nRF52 Bluefruit LE - nRF52832](https://www.adafruit.com/product/3406)
 - [Adafruit Feather nRF52840 Express](https://www.adafruit.com/product/4062)
 - [BBC micro:bit](https://microbit.org/)
 - [Obniz](https://obniz.io/)
 - [Puck.js](https://www.puck-js.com/)
 
-Each firmware is located under `line-things-dev-board`, `esp32`, `m5stack`, `nrf52`, `microbit`, `obniz` and `puckjs` respectively.
+Each firmware is located under `line-things-dev-board`, `esp32`, `m5stack`, `m5stick-c`,`nrf52`, `microbit`, `obniz` and `puckjs` respectively.
 For further details, please refer to the `README` file in each directory.
 
 ### Enable LINE Things
