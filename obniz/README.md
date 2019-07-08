@@ -9,7 +9,9 @@
 2. Select your Wi-Fi network and enter the password
 
 ## Running the sample
-*Note: As of this writing, we are using Obniz version 1.16.1*
+
+*Note: This sample code requires obnizOS version 2.0.0 or above.*
+
 1. Login to [Obniz](http://obniz.io/program)
 2. Click on Tool on the top right and select **Import**
 3. Navigate to the file **obniz/sample.html** from this repository and click Open
