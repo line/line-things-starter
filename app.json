@@ -1,0 +1,22 @@
+{
+    "name": "LINE Things Starter",
+    "description": "Sample bot for LINE Things automatic communication",
+    "keywords": [
+        "linethings",
+        "linebot",
+        "iot",
+        "python"
+    ],
+    "website": "https://developers.line.biz/en/docs/line-things/",
+    "repository": "https://github.com/line/line-things-starter",
+    "env": {
+        "LINE_CHANNEL_SECRET": {
+            "description": "Channel secret of LINE Messaging API",
+            "value": ""
+        },
+        "LINE_CHANNEL_ACCESS_TOKEN": {
+            "description": "Channel access token of LINE Messaging API",
+            "value": ""
+        }
+    }
+}
