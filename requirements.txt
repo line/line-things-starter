@@ -1,0 +1,3 @@
+line-bot-sdk >= 1.12.1
+flask
+gunicorn

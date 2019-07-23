@@ -1,12 +1,14 @@
 # LINE Things Starter
 
-These are the sample codes for LINE Things Developer Trial.
+This repository contains sample codes for LINE Things Developer Trial.
 
-LINE Things compatible device example firmware and LIFF application code are included.
+LINE Things compatible device example firmware, LIFF app code and LINE bot code are included.
+
+English | [日本語](README.ja.md)
 
 ## Getting Started
 
-[LINE Things](https://developers.line.biz/ja/docs/line-things/) is a platform that connects Bots and Web services together with IoT devices that are Bluetooth LE enabled.
+[LINE Things](https://developers.line.biz/en/docs/line-things/) is a platform that connects Bots and Web services together with IoT devices that are Bluetooth LE enabled.
 
 To start developing for LINE Things using the example code and the sample firmware, the following steps are necessary.
 
@@ -40,12 +42,28 @@ Here you can test all the LIFF BLE functionalities of LINE Things.
 
 ## Developer Trial
 
-Documentation regarding the original firmware and LIFF functions for LINE Things are published at [LINE Things Developer Trial](https://developers.line.biz/ja/docs/line-things/about-line-things-trial/).
+Developers can try the functions of LINE Things for free with the [LINE Things Developer Trial](https://developers.line.biz/en/docs/line-things/about-line-things-trial/).
 
-In order to develop for LINE Things using Developer Trial, you will need to create a LIFF application, register a trial product, and issue a GATT Service UUID.
-For additional details, please visit the [LINE Developers](https://developers.line.biz/) site.
+Documentation regarding firmware development and LIFF functions for LINE Things are published at [LINE Developers - LINE Things](https://developers.line.biz/en/docs/line-things/).
 
-Please refer to the following article from LINE Engineering Blog.
+### Product registration and creating LIFF app
+
+In order to develop for LINE Things using Developer Trial, you will need to create a LIFF app, register a trial product, and issue a GATT Service UUID.
+For additional details, please visit the [LINE Developers](https://developers.line.biz/en/docs/line-things/) site.
+
+### Automatic communication
+
+LINE bot sample code for the automatic communication feature is also included in `bot/app.py`.
+You can deploy it to Heroku from following button.
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+In order to develop automatic communication, you have to setup webhook for LINE Messaging API and register "Scenario set" by LINE Things REST API.
+Please see [bot/README.md](bot/README.md) for details.
+
+### References
+
+Please refer to the following step by step article from LINE Engineering Blog.
 
 - [Trying out LINE’s IoT Platform through LINE Things Developer Trial](https://engineering.linecorp.com/en/blog/line-things-developer-trial/)
 - [LINE Things automatic communication](https://engineering.linecorp.com/en/blog/line-things-automatic-communication/)

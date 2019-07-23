@@ -53,7 +53,8 @@ class writeCallback: public BLECharacteristicCallbacks {
 };
 
 void setup() {
-  Serial.begin(115200);
+  M5.begin();
+
   BLEDevice::init("");
   BLEDevice::setEncryptionLevel(ESP_BLE_SEC_ENCRYPT_NO_MITM);
 
@@ -70,10 +71,9 @@ void setup() {
   digitalWrite(M5_LED, HIGH);
 
   // M5StickC LCD Setup
-  M5.begin(true, true, false);
   uint8_t brightness = 8;
   M5.Axp.ScreenBreath(brightness);
-  M5.Lcd.qrcode("line://nv/things/deviceLink", 0, 0, 80, 9);
+  M5.Lcd.qrcode("https://line.me/R/nv/things/deviceLink", 0, 0, 80, 3);
   M5.Lcd.setTextColor(YELLOW);
   M5.Lcd.setCursor(0, 80, 2);
   M5.Lcd.println("Not Connect");
