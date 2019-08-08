@@ -72,7 +72,7 @@ Please refer to the following step by step article from LINE Engineering Blog.
 
 | Link | Description | Publisher | License | Stars |
 | ---- | ---- | ---- | ---- | ---- |
-| https://github.com/meganetaaan/line-things-starter-moddable | Starter based on LINE Things and Moddable SDK | meganetaaan | MIT | ![stars](http://githubbadges.com/star.svg?repo=line-things-starter-moddable&user=meganetaaan)
+| https://github.com/meganetaaan/line-things-starter-moddable | Starter built on [Moddable SDK](https://www.moddable.com/), a JavaScript-based embedded application platform | meganetaaan | MIT | ![stars](http://githubbadges.com/star.svg?repo=line-things-starter-moddable&user=meganetaaan)
 
 ## License
 
