@@ -68,6 +68,12 @@ Please refer to the following step by step article from LINE Engineering Blog.
 - [Trying out LINE’s IoT Platform through LINE Things Developer Trial](https://engineering.linecorp.com/en/blog/line-things-developer-trial/)
 - [LINE Things automatic communication](https://engineering.linecorp.com/en/blog/line-things-automatic-communication/)
 
+### Community based starters
+
+| Link | Description | Publisher | License | Stars |
+| ---- | ---- | ---- | ---- | ---- |
+| https://github.com/meganetaaan/line-things-starter-moddable | Starter based on LINE Things and Moddable SDK | meganetaaan | MIT | ![stars](http://githubbadges.com/star.svg?repo=line-things-starter-moddable&user=meganetaaan)
+
 ## License
 
 LINE Things Starter code is licensed under Creative Commons License [CC0](http://creativecommons.org/publicdomain/zero/1.0/).
