@@ -1,5 +1,10 @@
 # 自動通信サンプルボット for LINE Things Starter
 
+> [!WARNING]
+> LINE Things Developer Trial was discontinued on March 31, 2024.
+> See the [official announcement](https://developers.line.biz/ja/news/2024/05/13/line-things-docs-discontinued/) and [project status](../README.ja.md).
+> This sample and the instructions below are retained for historical reference only.
+
 LINE Things Starter デバイスが、自身で登録した LINE Things プロダクトの Service UUID できちんと動作することを確認してから先へ進んでください。
 
 ## シナリオセットを登録
@@ -26,13 +31,6 @@ $ curl -v -X PUT https://api.line.me/things/v1/products/<YOUR PRODUCT ID>/scenar
 ```
 
 詳しくは、LINE Things ドキュメントの [自動通信の準備をする](https://developers.line.biz/ja/docs/line-things/prepare-auto-communication/) を参照してください。
-
-## サンプルボットを Heroku へデプロイ
-
-LINE Things プロダクトを登録したチャネルの "LINE_CHANNEL_ACCESS_TOKEN" と "LINE_CHANNEL_SECRET" をデプロイ画面で入力するのを忘れないでください。
-[LINE Developers](https://developers.line.biz/) サイトから取得できます。
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/line/line-things-starter)
 
 ## Webhook URL を設定
 

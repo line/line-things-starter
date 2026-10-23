@@ -1,5 +1,10 @@
 # A sample bot for LINE Things Starter with automatic communication
 
+> [!WARNING]
+> LINE Things Developer Trial was discontinued on March 31, 2024.
+> See the [official announcement](https://developers.line.biz/en/news/2024/05/13/line-things-docs-discontinued/) and [project status](../README.md).
+> This sample and the instructions below are retained for historical reference only.
+
 Please make sure to confirm that the LINE Things Starter device with your own LINE Things product Service UUID is working fine before doing this.
 
 ## Register "Scenario set"
@@ -26,13 +31,6 @@ $ curl -v -X PUT https://api.line.me/things/v1/products/<YOUR PRODUCT ID>/scenar
 ```
 
 For more information, see the LINE Things document, [Prepare to use automatic communication](https://developers.line.biz/en/docs/line-things/prepare-auto-communication/).
-
-## Deploy a sample bot to Heroku
-
-Make sure to enter "LINE_CHANNEL_ACCESS_TOKEN" and "LINE_CHANNEL_SECRET" of the channel of your own LINE Things product on deployment form.
-You can get it from [LINE Developers](https://developers.line.biz/en/) site.
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/line/line-things-starter)
 
 ## Setup Webhook URL
 

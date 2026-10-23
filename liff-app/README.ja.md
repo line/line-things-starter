@@ -1,5 +1,11 @@
 # LINE Things Starter - LIFF App
 
+> [!WARNING]
+> LINE Things Developer Trial was discontinued on March 31, 2024.
+> See the [official announcement](https://developers.line.biz/ja/news/2024/05/13/line-things-docs-discontinued/) and [project status](../README.ja.md).
+> This sample and the instructions below are retained for historical reference only.
+> GitHub Pages hosting for this sample has been discontinued.
+
 LINE Things Starter 向け LIFF アプリのサンプルコードです。
 初期状態の Starter ファームウェアで動作する LIFF アプリのコードが含まれています。
 
@@ -14,7 +20,6 @@ Developer Trial を利用して開発をするには、`liff.js` に書かれた
 1. GitHub 上でリポジトリを Fork
 2. GitHub Pages の設定から "Source" に "master branch" を選択
 3. 公開された GitHub Pages の URL に `liff-app/` を足したものを、LIFF エンドポイント URL に設定
-(例: https://line.github.io/line-things-starter/liff-app/)
 
 ## Reference
 
