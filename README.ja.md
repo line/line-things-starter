@@ -1,5 +1,17 @@
 # LINE Things Starter
 
+> [!WARNING]
+> **This project has been discontinued.**
+>
+> LINE Things Developer Trial was discontinued on March 31, 2024.
+> See the [official announcement](https://developers.line.biz/ja/news/2024/05/13/line-things-docs-discontinued/).
+>
+> This repository is archived and retained for historical reference only.
+> No further updates, including bug fixes or security fixes, will be provided.
+> GitHub Pages hosting for this repository has also been discontinued.
+>
+> The instructions below are historical and refer to the discontinued service.
+
 LINE Things Developer Trial 向けのサンプルコードです。
 
 LINE Things 対応デバイスを作成するためのファームウェアと、LIFF アプリのコード、サンプル LINE Bot が含まれています。
@@ -53,9 +65,6 @@ Developer Trial を利用して開発を行うには、LIFF アプリの作成�
 ### 自動通信機能
 
 自動通信機能のための LINE bot のサンプルコードも `bot/app.py` に格納されています。
-以下のボタンから、Heroku へデプロイすることができます。
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 自動通信の開発には、LINE Messaging API の Webhook の設定と、LINE Things REST API を利用したシナリオセットの登録が必要です。
 詳しくは、[bot/README.ja.md](bot/README.ja.md) を参照してください。

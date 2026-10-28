@@ -1,5 +1,17 @@
 # LINE Things Starter
 
+> [!WARNING]
+> **This project has been discontinued.**
+>
+> LINE Things Developer Trial was discontinued on March 31, 2024.
+> See the [official announcement](https://developers.line.biz/en/news/2024/05/13/line-things-docs-discontinued/).
+>
+> This repository is archived and retained for historical reference only.
+> No further updates, including bug fixes or security fixes, will be provided.
+> GitHub Pages hosting for this repository has also been discontinued.
+>
+> The instructions below are historical and refer to the discontinued service.
+
 This repository contains sample codes for LINE Things Developer Trial.
 
 LINE Things compatible device example firmware, LIFF app code and LINE bot code are included.
@@ -54,9 +66,6 @@ For additional details, please visit the [LINE Developers](https://developers.li
 ### Automatic communication
 
 LINE bot sample code for the automatic communication feature is also included in `bot/app.py`.
-You can deploy it to Heroku from following button.
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 In order to develop automatic communication, you have to setup webhook for LINE Messaging API and register "Scenario set" by LINE Things REST API.
 Please see [bot/README.md](bot/README.md) for details.
